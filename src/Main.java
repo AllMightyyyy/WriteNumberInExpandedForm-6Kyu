@@ -21,7 +21,9 @@ public class Main {
         int rest = num / 10;
         int spot = 1;
         StringBuilder sb = new StringBuilder();
-        sb.append(digit * spot);
+        if (digit != 0) {
+            sb.append(digit * spot);
+        }
         while(rest != 0 || digit != 0) {
             digit = rest % 10;
             rest = rest / 10;
